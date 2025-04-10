@@ -11,7 +11,11 @@ const Blogs = () => {
 
   console.log(blogs);
 
-  return <div></div>;
+  return (
+    <div>
+      <h1>Total blogs: {blogs.length}</h1>
+    </div>
+  );
 };
 
 export default Blogs;
