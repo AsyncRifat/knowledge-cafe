@@ -36,7 +36,7 @@ const Blog = ({ blog, handleBookMark, handleMarkAsRead }) => {
             </button>
             <button
               className="btn btn-primary"
-              onClick={() => handleMarkAsRead(blog.reading_time)}
+              onClick={() => handleMarkAsRead(blog.reading_time,blog.id)}
             >
               Mark as Read
             </button>

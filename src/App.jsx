@@ -12,12 +12,17 @@ function App() {
     setBookMarked([...bookMarked, blogData]);
   };
 
-  const handleMarkAsRead = time => {
+  const handleMarkAsRead = (time, id) => {
     const newTime = readingCount + time;
     setReadingCount(newTime);
+    handleRemoveFromBookMark(id);
   };
-
   // console.log(bookMarked);
+
+  const handleRemoveFromBookMark = id => {
+    const remainingBookMark = bookMarked.filter(mark => mark.id !== id);
+    setBookMarked(remainingBookMark);
+  };
 
   return (
     <div className="w-11/12 mx-auto">
