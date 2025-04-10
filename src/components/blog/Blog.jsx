@@ -7,7 +7,6 @@ const Blog = ({ blog, handleBookMark, handleMarkAsRead }) => {
   // console.log(handleBookMark);
   return (
     <div>
-      {/* <h1>{blog.id}</h1> */}
       <div className="card bg-base-100 w-96 shadow-sm">
         <figure>
           <img src={blog.cover} alt="Shoes" />
